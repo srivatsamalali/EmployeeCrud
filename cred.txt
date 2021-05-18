@@ -1,0 +1,9 @@
+
+use SSO;
+drop table Signup;
+
+create table Signup(empid int not null auto_increment primary key, firstname varchar(50),lastname varchar(50),
+					mail_id varchar(50),password varchar(100)
+                    );
+insert into Signup(empid,firstname,lastname,mail_id,password) values("123","srivatsa","malali","srivatsa@gmail.com","123");
+select * from Signup;

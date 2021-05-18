@@ -1,0 +1,21 @@
+create database timesheet_new;
+
+use timesheet_new;
+
+create table user(empid int primary key,emp_firstname varchar(50),
+                    emp_lastname varchar(50),gender enum('M','F'),
+                    mail_id varchar(70),DOJ date,department_name varchar(70));
+
+insert into user(empid,emp_firstname,emp_lastname,gender,mail_id,DOJ,department_name) values(123,srivatsa,malali,M,srivatsa.a.malali@gmail.com,2021-05-12,CEO);
+insert into user(empid,emp_firstname,emp_lastname,gender,mail_id,DOJ,department_name) values(124,srikanth,malali,M,srikanth.a.malali@gmail.com,2021-05-30,HR);
+insert into user(empid,emp_firstname,emp_lastname,gender,mail_id,DOJ,department_name) values(125,usha,malali,F,ushamalali75@gmail.com,2021-06-30,Production Manager);
+insert into user(emp_firstname,emp_lastname,gender,mail_id,DOJ,department_name) values(usha,malali,F,ushamalali75@gmail.com,2021-06-30,Production Manager);
+
+select  from user;
+
+alter table user
+modify column empid int auto_increment;
+
+drop table user;
+
+
